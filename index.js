@@ -38,7 +38,7 @@ mongoose.connect(
 );
 
 // boot
-app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+app.listen(port, () => console.log(`Cat management system backend listening on port ${port}!`));
 
 // close
 process.on('uncaughtException', app.disable());
