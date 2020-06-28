@@ -13,12 +13,12 @@ router.get('/cats', async (req, res) => {
 router.post('/newcat', (req, res) => {
     const cat = new Cat({
         name: req.body.name,
-        breed: req.body.breed || " ",
-        color: req.body.color || " ",
+        breed: req.body.breed || "",
+        color: req.body.color || "",
         gender: req.body.gender,
         age: req.body.age,
-        description: req.body.description || " ",
-        pictures: req.body.pictures || " "
+        description: req.body.description || "",
+        pictures: req.body.pictures || ""
     })
     res.header("Access-Control-Allow-Origin", "*");
     cat.save()

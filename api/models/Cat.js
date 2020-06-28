@@ -7,11 +7,11 @@ const CatSchema = mongoose.Schema({
     },
     breed: {
         type: String,
-        required: true
+        required: false
     },
     color: {
         type: String,
-        required: true
+        required: false
     },
     gender: {
         type: String,
@@ -23,11 +23,11 @@ const CatSchema = mongoose.Schema({
     },
     description: {
         type: String,
-        required: true
+        required: false
     },
     pictures: {
         type: String,
-        required: true
+        required: false
     }
 });
 

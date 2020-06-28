@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 });
 
 // db connect
-const uri = process.env.DB_CONNECTION;
+const uri = process.env.MONGO_CONNECT_URI;
 
 mongoose.connect(
     uri,
